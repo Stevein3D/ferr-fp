@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="js/flowplayer.playlist-3.2.10.js"></script>
+        <script type="js/flowplayer.playlist-3.2.10.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,6 +27,26 @@
         <header>
             <img src="img/ssp-header-sm.jpg" width="100%">
         </header>
+        <iframe src="http://player.vimeo.com/video/47633661" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+        <div class="clips" style="float:left">
+ 
+            <!-- single playlist entry as an "template" -->
+            <a href="${url}">
+            ${title} <span>${subTitle}</span>
+            <em>${time}</em>
+            </a>
+ 
+        </div>
+ 
+            <!-- the player using splash image -->
+            <a class="player plain" id="player1" style="float:left">
+            <img class="button" src="/img/favicon.ico" />
+            </a>
+ 
+            <!-- let rest of the page float normally -->
+            <br clear="all"/>
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
